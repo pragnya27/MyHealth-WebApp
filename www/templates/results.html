@@ -1,0 +1,37 @@
+ <ion-view view-title="Results">
+        <ion-content class="padding">
+
+<button class="button button-full button-assertive" >
+        Enter Results
+      </button>
+
+<div id="AddItem">
+      
+      <input value="" type="text" placeholder="Day" ng-model="itemAmount">
+      <input value="" type="text" placeholder="Test Name" ng-model="itemName">
+      <input value ="" type ="text" placeholder="Hospital Name" ng-model="hospitalname">
+      <br />
+      <button class="button button-positive" ng-click="addItem(itemAmount,itemName,hospitalname)">Add to list</button>
+    </div>
+  <div id="UncheckedList">
+      <h4></h4>
+      <table>
+         <tr ng-repeat="item in items" class="item-unchecked">
+            <td><b>Day:</b> {{item.amount}} -</td>
+            <td><b>Name:</b> {{item.name}} -</td>
+              <td><b>Hospital:</b> {{item.hospital}} -</td>
+            <td>
+               <button ng-click="removeItem($index)">remove</button>
+            </td>
+          </tr>
+      </table>
+  </div>
+          <!-- <p>
+            <button class="button icon icon-left ion-chevron-left" ng-click="enter()">back</button>
+          </p> -->
+
+ <a class="button icon ion-home" href="#/tab/home"> Home</a>
+
+          
+        </ion-content>
+      </ion-view>

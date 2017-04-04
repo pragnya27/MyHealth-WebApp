@@ -1,0 +1,16 @@
+Read Me:
+
+
+** I have used Firebase for the backend, but in ionic view somehow I cannot display it using firebase so temporarily I have used a Json file parsing email and password. The application will not accept any username or password other than this.
+
+Username: pragnya 
+
+Password: 1
+
+** When you set reminders in the first tab in the application I have temporarily provided 300 ms to get a alert box for the reminder. You need to click alarm button and alert box pops up after 3 seconds.
+
+** You can set up the doctor appointments and see the already set up appointments
+
+** In the health meter you can type any random number to get an example health meter
+
+** In all the sections you can enter the values and they can be posted to the screen 

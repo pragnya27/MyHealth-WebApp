@@ -1,0 +1,24 @@
+<ion-view view-title="Dashboard" name="dashboard-view">
+  <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding">
+    <div class="row"><div class="col text-center">
+      <h3 class="title">Welcome to MyHealth {{username}}!</h3>
+      Personalized Health Application
+      <br><br><br>
+      <button class="button button-full button-positive" ng-click="performValidRequest()">
+        Set Reminder
+      </button>
+      <button class="button button-full button-energized" ng-click="performUnauthorizedRequest()">
+        Doctor Appointments
+      </button>
+      <button class="button button-full button-assertive" ng-click="performInvalidRequest()">
+        Test Results
+      </button>
+      <br><br>
+      {{response}}
+    </div></div>
+  </ion-content>
+</ion-view>

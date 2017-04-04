@@ -1,0 +1,35 @@
+<ion-view view-title="Appointments" name="dashboard-view">
+
+<ion-nav-buttons side="left">
+    <button class="button icon-left ion-log-out button-stable" ng-click="goBack()">Back</button>
+  </ion-nav-buttons>
+
+
+  <ion-content class="padding">
+
+   <div id="AddItem">
+      <h3>Set Up Appointment</h3>
+      <input value="" type="text" placeholder="Day" ng-model="itemAmount">
+      <input value="" type="text" placeholder="Name of the Doctor" ng-model="itemName">
+      <input value ="" type ="text" placeholder="Hospital Name" ng-model="hospitalname">
+      <br />
+      <button class="button button-positive" ng-click="addItem(itemAmount,itemName)">Add to list</button>
+    </div>
+  <div id="UncheckedList">
+      <h4></h4>
+      <table>
+         <tr ng-repeat="item in items" class="item-unchecked">
+            <td><b>Day:</b> {{item.amount}} -</td>
+            <td><b>Name:</b> {{item.name}} -</td>
+            <td>
+               <button ng-click="removeItem($index)">remove</button>
+            </td>
+          </tr>
+      </table>
+  </div>
+
+
+            <button class="button icon icon-right ion-chevron-right" ng-click="goToAppointments()">Already Fixed Appointments</button>
+          
+  </ion-content>
+</ion-view>

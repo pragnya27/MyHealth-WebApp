@@ -1,0 +1,122 @@
+<ion-view view-title="Medical Reminders" name="dashboard-view">
+  <ion-content class="padding">
+     <div class="row"><div class="col text-center">
+      <h3 class="title">Set up your medical reminders !!</h3>
+
+ <br><br><br>
+
+ <!--  <button class="button button-full button-positive" ng-click="doClick()"> 
+        Set Reminder
+      </button>
+
+
+<ion-list>
+        Add Reminder
+    </ion-toggle>
+    </ion-list>
+<ion-list>
+<p> Hi Pragnya!! </p>
+
+</ion-list> -->
+
+
+
+<!--  <ion-header-bar class="bar-positive">
+      <div class="buttons">
+        <button class="button button-icon icon ion-ios-minus-outline"
+          ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+      </div>
+      <h1 class="title">Ionic Delete/Option Buttons</h1>
+      <div class="buttons">
+        <button class="button" ng-click="data.showDelete = false; data.showReorder = !data.showReorder">
+            Reorder
+        </button>
+      </div>
+    </ion-header-bar>
+
+
+  
+
+      <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+      
+      <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+
+        <ion-item ng-repeat="item in items" 
+                  item="item"
+                  href="#/item/{{item.id}}" class="item-remove-animate">
+          Medicine {{ item.id }}
+          <ion-delete-button class="ion-minus-circled" 
+                             ng-click="onItemDelete(item)">
+          </ion-delete-button>
+          <ion-option-button class="button-assertive"
+                             ng-click="edit(item)">
+            Edit
+          </ion-option-button>
+          <ion-option-button class="button-calm"
+                             ng-click="share(item)">
+            Share
+          </ion-option-button>
+          <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+        </ion-item>
+
+      </ion-list>
+
+  
+<div id="AddItem">
+    
+
+<button class="button button-full button-positive"> Add Medicines </button>
+
+
+      <input value="" type="text" placeholder="Day" ng-model="dateEnter">
+     
+      <input value="" type="text" placeholder="Name of Medicine" ng-model="itemName">
+      <input value="" type="text" placeholder="Time" ng-mode;="time">
+      <br />
+      <button class="button button-positive" ng-click="addItem(dateEnter,itemName)">Add to list</button>
+    </div>
+  <div id="UncheckedList">
+      <h4>Med List:</h4>
+      <table>
+         <tr ng-repeat="item in items" class="item-unchecked">
+            <td><b>Day:</b> {{item.date}} -</td>
+            <td><b>Name of the medicine:</b> {{item.name}} -</td>
+            
+            <td>
+               <button ng-click="removeItem($index)">remove</button>
+            </td>
+          </tr>
+      </table>
+  </div>
+
+
+
+
+  <a class="button icon ion-home" href="#/tab/home"> Home</a>
+
+ </ion-content>
+
+
+ <button class="button button-positive" ng-click="showAlert()">
+      Medical Reminders?
+    </button>
+
+ <button class="button button-dark" ng-click="setDelay()">
+      Alarm?
+    </button>
+<!-- 
+    <button class="button button-primary" ng-click="showConfirm()">
+      Set Up?
+    </button> --> 
+
+
+</ion-view>
+
+
+
+  
+
+
+
+
+ 

@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+
+
+
+.scroll-content {
+    background: url(/lib/image.jpg);
+
+     /*background-repeat: no-repeat;
+
+   background-position: center;
+ */
+
+  }
+
+  .title {
+
+text-color: white;
+
+  }
+
+  #add{
+
+  	font-weight: bold;
+  	
+  }
